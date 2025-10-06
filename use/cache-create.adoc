@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: use/cache-create.html 
+keywords: volume caching, Volume caching 
+summary: O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados.  Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Crie um cache usando cache de volume
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados.  Volumes em cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente.  Você pode criar cache de volume entre o Amazon FSx for ONTAP, o Cloud Volumes ONTAP e o ONTAP local com um ou mais volumes de origem do sistema de origem como a origem do cache.  Em seguida, você escolhe a máquina virtual de armazenamento para os volumes de cache.
+
+O volume em cache pode estar no mesmo cluster ou em um cluster diferente daquele do volume de origem.  Os volumes selecionados para armazenamento em cache devem pertencer à mesma VM de armazenamento e as VMs de armazenamento devem usar os mesmos protocolos.
+
+
+TIP: Se os volumes não forem elegíveis para armazenamento em cache, eles ficarão esmaecidos para que você não possa selecioná-los.
+
+Você pode inserir o tamanho dos volumes armazenados em cache como uma porcentagem do tamanho do volume de origem.
+
+
+NOTE: O IPSpace usado pelo volume em cache depende do IPSpace usado pela VM de armazenamento de origem.
+
+O nome do volume em cache usa um sufixo de `pass:macros[_cache]` adicionado ao nome do volume original.
+
+
+
+== Etapas da página de destino do cache de volume
+
+. Efetue login no NetApp Console.
+. Selecione *Mobilidade* > *Cache de volume* na navegação à esquerda.
++
+Você será direcionado para a página do Painel de cache de volume.  Ao começar a usar a opção de cache de volume, você precisa adicionar as informações de cache.  Mais tarde, o Painel aparece e exibe dados sobre os caches.
+
++
+
+NOTE: Se você ainda não configurou um agente do NetApp Console, a opção *Adicionar um agente do Console* será exibida em vez de *Adicionar um cache*.  Nesse caso, você precisa configurar o agente do Console primeiro.  Consulte o https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["Início rápido do console NetApp"^] .
+
++
+image:landing-page.png["a página de destino para cache de volume"]
+
+. Selecione *Adicionar um cache*.
+. Na página Dados do cache, selecione o cache de origem e de destino do sistema e selecione *Iniciar assistente de cache*.
+. Na página Configurar seus caches, selecione o volume ou volumes que você deseja armazenar em cache.
++
+
+NOTE: Você pode selecionar até 50 volumes.
+
+. Role a página para baixo para fazer alterações adicionais nos detalhes da VM ou no tamanho do volume.
+. Insira o tamanho dos volumes de cache como uma porcentagem do tamanho do volume de origem.
++
+
+TIP: Uma boa regra prática é que o tamanho do volume do cache deve ser cerca de 15% do tamanho do volume de origem.
+
+. Marque a caixa *Acesso ao cache* para replicar as regras da política de exportação NFS e a configuração de compartilhamento SMB/CIFS do volume de origem para o volume de cache de destino.
++
+Em seguida, as regras da política de exportação do NFS e o compartilhamento SMB/CIFS no volume de origem serão replicados para o volume de cache.  Se o protocolo SMB/CIFS não estiver habilitado na VM de armazenamento em cache, o compartilhamento SMB/CIFS não será replicado.
+
+. Opcionalmente, insira o prefixo do nome do cache.
++
+O sufixo de `pass:macros[_cache]` é anexado ao nome no formato: `<user-specified prefix>_<source volume name>_cache`
+
+. Selecione *Criar caches*.
++
+O novo cache aparece na lista de cache.  O nome do volume do cache será exibido `pass:macros[_cache]` como um sufixo para o nome do volume de origem.
+
+. Para ver o progresso da operação, no menu do NetApp Console, selecione *Administração* > *Auditoria*.
+
+
+
+
+== Etapas da página Sistemas do console NetApp
+
+. Na página Sistemas do console NetApp , selecione o ambiente de trabalho.
+. Selecione o sistema de origem e arraste-o para o destino.image:drag-n-drop.png["funcionalidade de arrastar e soltar para criar cache"]
+. Selecione *Cache de volume*.
++
+Isso cria um volume de cache da origem ao destino.
+
+. No painel direito, na caixa de opções Cache, selecione *Adicionar*.
+. Na página Dados de cache, selecione o sistema que você deseja armazenar em cache e selecione *Iniciar assistente de cache*.image:cache-data.png["pop-up de dados de cache"]
+. Na página Configurar seus caches, selecione o volume ou volumes que você deseja armazenar em cache.
++
+
+NOTE: Você pode selecionar até 50 volumes.
+
+. Role a página para baixo para fazer alterações adicionais nos detalhes da VM ou no tamanho do volume.
+. Insira o tamanho dos volumes de cache como uma porcentagem do tamanho do volume de origem.
++
+
+TIP: Uma boa regra prática é que o tamanho do volume do cache deve ser cerca de 15% do tamanho do volume de origem.
+
++
+image:create-cache.png["janela para adicionar cache"]
+
+. Marque a caixa *Acesso ao cache* para replicar as regras da política de exportação NFS e a configuração de compartilhamento SMB/CIFS do volume de origem para o volume de cache de destino.
++
+Em seguida, as regras da política de exportação do NFS e o compartilhamento SMB/CIFS no volume de origem serão replicados para o volume de cache.  Se o protocolo SMB/CIFS não estiver habilitado na VM de armazenamento em cache, o compartilhamento SMB/CIFS não será replicado.
+
+. Opcionalmente, insira o prefixo do nome do cache.
++
+O sufixo de `pass:macros[_cache]` é anexado ao nome no formato: `<user-specified prefix>_<source volume name>_cache`
+
+. Selecione *Criar caches*.
++
+O novo cache aparece na lista de cache.  O nome do volume do cache será exibido `pass:macros[_cache]` como um sufixo para o nome do volume de origem.
+
+. Para ver o progresso da operação, no menu do NetApp Console, selecione *Administração* > *Auditoria*.
+

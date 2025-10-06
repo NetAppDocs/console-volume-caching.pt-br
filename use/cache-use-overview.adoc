@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: use/cache-use-overview.html 
+keywords: volume caching, volume caching 
+summary: O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados.  Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Visão geral do uso do cache de volume
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Usando o cache de volume, você pode atingir os seguintes objetivos:
+
+* link:../use/cache-create.html["Criar um cache"] .
+* link:../use/cache-manage.html#view-cache-details["Ver detalhes do cache"] .
+* link:../use/cache-manage.html#assign-a-different-cache-export-policy["Alterar a política de exportação e redimensionar um cache"] .
+* link:../use/cache-manage.html#delete-a-volume-cache["Excluir um cache"] .
+* link:../use/monitor-jobs.html["Monitorar operações de cache de volume"]na página Auditoria do console NetApp .
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-login.html 
+keywords: bluexp login, volume caching log in 
+summary: Comece a usar o cache de volume acessando o serviço no NetApp Console. 
+---
+= Cache de volume de acesso
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use o NetApp Console para acessar a opção de cache de volume.
+
+Para fazer login no NetApp Console, você pode usar suas credenciais do site de suporte da NetApp . https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^] .
+
+.Passos
+. Abra um navegador da web e vá para o https://console.netapp.com/["Console NetApp"^] .
++
+A página de login do NetApp Console é exibida.
+
+. Efetue login no Console.
+. Na navegação à esquerda do Console, selecione *Mobilidade* > *Cache de volume*.
++
+O painel de cache de volume é exibido.image:landing-page.png["imagem da página de destino para cache de volume"]
+
++
+
+NOTE: Se um agente do Console não estiver configurado, a opção *Adicionar um agente do Console* será exibida. Consulte link:../get-started/cache-setup.html["Configurar cache de volume"] .
+
+

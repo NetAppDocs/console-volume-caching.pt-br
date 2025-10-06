@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: get-started/cache-intro.html 
+keywords: how volume caching works, what is volume caching, bluexp 
+summary: O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados.  Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+---
+= Saiba mais sobre cache de volume
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+O cache de volume, um recurso do software ONTAP 9, é um recurso de cache remoto que simplifica a distribuição de arquivos, reduz a latência da WAN ao aproximar os recursos de onde seus usuários e recursos de computação estão, e reduz os custos de largura de banda da WAN.  O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados.  Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente.
+
+Com o cache de volume, você tem recursos de cache para a nuvem, especificamente para Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ambientes de trabalho locais.
+
+O cache de volume também fornece acesso de filiais a conjuntos de dados corporativos.  Ao fornecer _dados quentes_, dados que precisam ser acessados com frequência de vários controladores em um cluster, você pode aumentar o desempenho fornecido aos principais aplicativos.  E, ao armazenar em cache dados importantes para usuários em vários locais ao redor do mundo, você pode melhorar a colaboração deles, permitindo acesso simultâneo a conjuntos de dados centralizados e, ao mesmo tempo, reduzindo o tempo de resposta que eles recebem ao acessar os dados importantes.
+
+
+
+== Console NetApp
+
+O cache de volume pode ser acessado por meio do NetApp Console.
+
+O NetApp Console fornece gerenciamento centralizado de serviços de armazenamento e dados da NetApp em ambientes locais e na nuvem em nível empresarial. O Console é necessário para acessar e usar os serviços de dados do NetApp . Como uma interface de gerenciamento, ele permite que você gerencie muitos recursos de armazenamento a partir de uma única interface. Os administradores do console podem controlar o acesso ao armazenamento e aos serviços de todos os sistemas da empresa.
+
+Você não precisa de uma licença ou assinatura para começar a usar o NetApp Console e só incorrerá em cobranças quando precisar implantar agentes do Console na sua nuvem para garantir a conectividade com seus sistemas de armazenamento ou serviços de dados do NetApp . No entanto, alguns serviços de dados da NetApp acessíveis pelo Console são licenciados ou baseados em assinatura.
+
+Saiba mais sobre o https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["Console NetApp"] .
+
+
+
+== O que é um cache?
+
+Um cache é um local de armazenamento temporário que fica entre um host e a fonte de dados.  O objetivo de um cache é armazenar partes de dados de origem acessadas com frequência de uma forma que permita que os dados sejam fornecidos mais rapidamente do que seria obtido ao buscar os dados na origem.  Os caches são mais benéficos em ambientes de leitura intensiva, onde os dados são acessados mais de uma vez e compartilhados por vários hosts.  Um sistema de cache é mais rápido que o sistema com fonte de dados, o que é obtido por meio de um sistema de armazenamento mais rápido e da proximidade do espaço de armazenamento de cache ao host.
+
+
+
+== Benefícios do cache de volume
+
+O cache de volume oferece os seguintes benefícios:
+
+* Acelere o desempenho em uma infraestrutura de nuvem híbrida
+* Remova silos de nuvem armazenando em cache dados de um provedor de nuvem para outro
+* Custos de armazenamento mais baixos
+* Colaborar em diferentes localizações geográficas
+* Capacidade de se adaptar mais rapidamente a ambientes de TI em mudança
+* Cache de volume sob demanda ou baseado em assinatura hospedado na nuvem
+
+
+
+
+== O que você pode fazer com o cache de volume
+
+O cache de volume oferece uso total de diversas tecnologias da NetApp para atingir os seguintes objetivos:
+
+* Armazenar dados em cache de um provedor de nuvem para outro
+* Visualizar e editar uma política de exportação de cache
+* Redimensionar um cache existente
+* Excluir um cache
+
+
+
+
+== Custo
+
+A NetApp não cobra pelo cache de volume, mas você precisará verificar com seu provedor de nuvem as taxas de entrada e saída de dados aplicáveis.
+
+
+
+== Licenciamento
+
+Nenhuma licença ONTAP especial é necessária para cache de volume.
+
+
+
+== Como funciona o cache de volume
+
+Um volume de cache é um volume pouco preenchido que é apoiado por um volume de origem.  O volume de cache pode estar no mesmo cluster ou em um cluster diferente daquele do volume de origem.
+
+O volume de cache fornece acesso aos dados no volume de origem sem exigir que todos os dados estejam no volume de cache.  O armazenamento de dados no volume de cache é gerenciado de forma eficiente, retendo apenas os dados importantes (dados de trabalho ou usados recentemente).
+
+O cache de volume lê solicitações se o volume de cache contiver os dados solicitados pelo cliente.  Caso contrário, o serviço de cache de volume solicita os dados do volume de origem e os armazena antes de atender à solicitação do cliente.  As solicitações subsequentes de dados são atendidas diretamente do volume de cache.  Isso melhora o desempenho quando os mesmos dados são acessados repetidamente, porque após a primeira solicitação, os dados não precisam mais viajar pela rede ou ser atendidos por um sistema sobrecarregado.

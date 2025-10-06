@@ -1,0 +1,12 @@
+---
+section: use
+title: Usar cache de volume
+entries:
+- title: Visão geral do uso do cache de volume
+  url: "/use/cache-use-overview.html"
+- title: Criar um cache
+  url: "/use/cache-create.html"
+- title: Gerenciar um cache
+  url: "/use/cache-manage.html"
+- title: Monitorar trabalhos de cache de volume
+  url: "/use/monitor-jobs.html"
