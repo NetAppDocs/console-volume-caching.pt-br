@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: use/cache-manage.html 
 keywords: volume caching, Volume caching 
-summary: O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados.  Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
+summary: O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
 ---
 = Gerenciar um cache
 :hardbreaks:
@@ -30,7 +30,7 @@ Com o cache de volume, você pode atingir estes objetivos:
 Para cada armazenamento em cache, você pode ver o volume original, o ambiente de trabalho, o volume do cache e muito mais.
 
 .Passos
-. Na navegação à esquerda do NetApp Console, selecione *Mobilidade* > *Cache de volume*.
+. Na navegação à esquerda do NetApp Console , selecione *Mobilidade* > *Cache de volume*.
 +
 Você pode visualizar a lista de volumes de cache criados no sistema de destino.  A lista de caches exibe os detalhes do cache.
 
@@ -47,7 +47,7 @@ Você pode visualizar a lista de volumes de cache criados no sistema de destino.
 Você pode alterar o nome, o tamanho do volume e a política de exportação de um cache.
 
 .Passos
-. Na navegação à esquerda do NetApp Console, selecione *Mobilidade* > *Cache de volume*.
+. Na navegação à esquerda do NetApp Console , selecione *Mobilidade* > *Cache de volume*.
 . Selecione uma linha e selecione a opção *Ações…* à direita.
 . Selecione *Exibir e editar detalhes*.
 . Na guia Configuração básica, opcionalmente, altere o nome do cache e o tamanho do volume do cache.
@@ -73,7 +73,7 @@ As regras da política de exportação de origem devem ser aplicadas ao cluster 
 TIP: Você pode atribuir uma política de exportação existente a um cache.  Você não pode alterar as regras da política de exportação.  Se precisar alterar as políticas de exportação, você pode usar o NetApp System Manager.
 
 .Passos
-. Na navegação à esquerda do NetApp Console, selecione *Mobilidade* > *Cache de volume*.
+. Na navegação à esquerda do NetApp Console , selecione *Mobilidade* > *Cache de volume*.
 . Selecione uma linha e selecione a opção *Ações…* à direita.
 . Selecione *Alterar política de exportação*.
 . Selecione a política de exportação que você deseja atribuir ao cache.
@@ -87,7 +87,7 @@ TIP: Você pode atribuir uma política de exportação existente a um cache.  Vo
 Você pode alterar o tamanho do volume do cache com base em uma porcentagem do volume de origem.
 
 .Passos
-. Na navegação à esquerda do NetApp Console, selecione *Mobilidade* > *Cache de volume*.
+. Na navegação à esquerda do NetApp Console , selecione *Mobilidade* > *Cache de volume*.
 . Selecione uma linha e selecione a opção *Ações…* à direita.
 . Selecione *Redimensionar*.
 . Insira uma nova porcentagem do tamanho do volume de origem.
@@ -104,7 +104,7 @@ O volume do cache será redimensionado para a nova porcentagem.
 Se você não precisar mais do cache, poderá excluí-lo.  Isso exclui o relacionamento de cache de volume e exclui o cache de volume de destino.
 
 .Passos
-. Na navegação à esquerda do NetApp Console, selecione *Mobilidade* > *Cache de volume*.
+. Na navegação à esquerda do NetApp Console , selecione *Mobilidade* > *Cache de volume*.
 . Selecione uma linha e selecione a opção *Ações…* à direita.
 . Selecione *Excluir*.
 . Marque a caixa.

@@ -14,7 +14,7 @@ summary: Comece a usar o cache de volume acessando o serviço no NetApp Console.
 [role="lead"]
 Use o NetApp Console para acessar a opção de cache de volume.
 
-Para fazer login no NetApp Console, você pode usar suas credenciais do site de suporte da NetApp . https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^] .
+Para efetuar login no NetApp Console, você pode usar suas credenciais do site de suporte da NetApp . https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Saiba mais sobre como fazer login"^] .
 
 .Passos
 . Abra um navegador da web e vá para o https://console.netapp.com/["Console NetApp"^] .

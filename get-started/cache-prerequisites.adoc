@@ -22,12 +22,12 @@ Para usar o cache de volume, você deve garantir que seu ambiente atenda a todos
 ** LIFs intercluster nos clusters
 
 
-* No console NetApp :
+* No NetApp Console:
 +
 ** O agente do Console precisa ser configurado no NetApp Console.  Todos os clusters de origem e destino devem estar no mesmo agente do Console. Consulte o https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html["Início rápido do BlueXP"^] e https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Saiba mais sobre os agentes do Console"^] .
 ** O ambiente de trabalho deve ser configurado.
 ** Os clusters devem ser adicionados no ambiente de trabalho de destino e em um estado LIGADO ou degradado.
-** Requisitos padrão do NetApp Console. Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos do console NetApp"^] .
+** Requisitos padrão do NetApp Console . Consulte https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Requisitos do NetApp Console"^] .
 
 
 

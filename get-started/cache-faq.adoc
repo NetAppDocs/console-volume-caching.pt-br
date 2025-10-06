@@ -18,4 +18,4 @@ Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma r
 
 *Você precisa de uma licença para usar o cache de volume?* Não é necessário um arquivo de licença NetApp (NLF).
 
-*Como você habilita o cache de volume?*  O cache de volume não requer nenhuma ativação.  A opção de cache de volume aparece automaticamente na navegação à esquerda do NetApp Console.
+*Como você habilita o cache de volume?*  O cache de volume não requer nenhuma ativação.  A opção de cache de volume aparece automaticamente na navegação à esquerda do NetApp Console .

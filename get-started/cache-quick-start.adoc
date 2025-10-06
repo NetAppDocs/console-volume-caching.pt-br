@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: get-started/cache-quick-start.html 
 keywords: how to get started with volume caching, volume caching quick start 
-summary: Comece a usar o cache de volume em algumas etapas. 
+summary: Comece a usar o cache de volume em poucas etapas. 
 ---
 = Início rápido para cache de volume
 :hardbreaks:
