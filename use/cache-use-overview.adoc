@@ -17,6 +17,5 @@ Usando o cache de volume, você pode atingir os seguintes objetivos:
 * link:../use/cache-create.html["Criar um cache"] .
 * link:../use/cache-manage.html#view-cache-details["Ver detalhes do cache"] .
 * link:../use/cache-manage.html#assign-a-different-cache-export-policy["Alterar a política de exportação e redimensionar um cache"] .
-* link:../use/cache-manage.html#delete-a-volume-cache["Excluir um cache"] .
 * link:../use/monitor-jobs.html["Monitorar operações de cache de volume"]na página Auditoria do NetApp Console .
 
