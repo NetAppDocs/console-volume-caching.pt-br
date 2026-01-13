@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-quick-start.html 
-keywords: how to get started with volume caching, volume caching quick start 
-summary: Comece a usar o cache de volume em poucas etapas. 
+keywords: how to get started with Volume Caching, Volume Caching quick start 
+summary: Comece a usar o cache de volume em poucos passos. 
 ---
-= Início rápido para cache de volume
+= Guia rápido para cache de volume
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,13 +12,13 @@ summary: Comece a usar o cache de volume em poucas etapas.
 
 
 [role="lead"]
-Aqui está uma visão geral das etapas necessárias para começar a usar o cache de volume. Os links em cada etapa levam você a uma página que fornece mais detalhes.
+Aqui está uma visão geral dos passos necessários para começar a usar o cache de volume. Os links em cada etapa levam você a uma página que fornece mais detalhes.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"]Revise os pré-requisitos
 [role="quick-margin-para"]
 link:../get-started/cache-prerequisites.html["Garanta que seu ambiente atenda a esses requisitos"] .
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"]Configurar cache de volume
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Configurar o cache de volume
 [role="quick-margin-para"]
 link:../get-started/cache-setup.html["Configurar cache do vlume"] .
 
@@ -29,5 +29,5 @@ Veja o que você pode fazer em seguida.
 [role="quick-margin-list"]
 * link:../use/cache-create.html["Criar um cache"] .
 * link:../use/cache-use-overview.html["Gerenciar um cache, editar um cache, redimensionar um cache ou excluir um cache"] .
-* link:../use/monitor-jobs.html["Monitorar operações de cache de volume"] .
+* link:../use/monitor-jobs.html["Monitorar operações de cache de volume"].
 

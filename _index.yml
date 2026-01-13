@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: Cache de volume NetApp
+  title: NetApp Volume Caching
   lead: O cache de volume fornece um volume persistente e gravável em um local remoto.
     Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar
     o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas
@@ -9,19 +9,19 @@ indexpage:
   tiles:
   - title: Começar
     links:
-    - title: Saiba mais sobre cache de volume
+    - title: Saiba mais sobre o cache de volume.
       url: "/get-started/cache-intro.html"
-    - title: O que há de novo no cache de volume
+    - title: O que há de novo no cache de volume?
       url: "/release-notes/cache-whats-new.html"
     - title: Início rápido
       url: "/get-started/cache-quick-start.html"
     - title: Pré-requisitos
       url: "/get-started/cache-prerequisites.html"
-    - title: Acesse a opção de cache de volume
+    - title: Acesse a opção de cache de volume.
       url: "/get-started/cache-login.html"
     - title: Perguntas frequentes
       url: "/get-started/cache-faq.html"
-  - title: Usar cache de volume
+  - title: Utilizar o cache de volume
     links:
     - title: Visão geral do uso do cache de volume
       url: "/use/cache-use-overview.html"

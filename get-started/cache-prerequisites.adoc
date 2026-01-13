@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-prerequisites.html 
-keywords: what are volume caching requirements, volume caching prerequisites 
-summary: Comece a usar o cache de volume verificando o suporte ao seu ambiente, acesso à rede, login e navegador da web. 
+keywords: what are Volume Caching requirements, Volume Caching prerequisites 
+summary: Comece a usar o cache de volume verificando a compatibilidade com seu ambiente, acesso à rede, login e navegador da web. 
 ---
 = Pré-requisitos de cache de volume
 :hardbreaks:

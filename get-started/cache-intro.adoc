@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: get-started/cache-intro.html 
-keywords: how volume caching works, what is volume caching, bluexp 
+keywords: how Volume Caching works, what is Volume Caching, bluexp 
 summary: O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
 ---
-= Saiba mais sobre cache de volume
+= Saiba mais sobre o cache de volume.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,7 @@ summary: O cache de volume fornece um volume persistente e gravável em um local
 [role="lead"]
 O cache de volume, um recurso do software ONTAP 9, é um recurso de cache remoto que simplifica a distribuição de arquivos, reduz a latência da WAN ao aproximar os recursos de onde seus usuários e recursos de computação estão, e reduz os custos de largura de banda da WAN. O cache de volume fornece um volume persistente e gravável em um local remoto.  Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente.
 
-Com o cache de volume, você tem recursos de cache para a nuvem, especificamente para Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ambientes de trabalho locais.
+Com o Volume Caching, você tem recursos de cache para a nuvem, especificamente para Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ambientes locais.
 
 O cache de volume também fornece acesso de filiais a conjuntos de dados corporativos.  Ao fornecer _dados quentes_, dados que precisam ser acessados com frequência de vários controladores em um cluster, você pode aumentar o desempenho fornecido aos principais aplicativos.  E, ao armazenar em cache dados importantes para usuários em vários locais ao redor do mundo, você pode melhorar a colaboração deles, permitindo acesso simultâneo a conjuntos de dados centralizados e, ao mesmo tempo, reduzindo o tempo de resposta que eles recebem ao acessar os dados importantes.
 
@@ -47,7 +47,7 @@ O cache de volume oferece os seguintes benefícios:
 * Custos de armazenamento mais baixos
 * Colaborar em diferentes localizações geográficas
 * Capacidade de se adaptar mais rapidamente a ambientes de TI em mudança
-* Cache de volume sob demanda ou baseado em assinatura hospedado na nuvem
+* Cache de volume sob demanda ou baseado em assinatura, hospedado na nuvem.
 
 
 
@@ -66,13 +66,13 @@ O cache de volume oferece uso total de diversas tecnologias da NetApp para ating
 
 == Custo
 
-A NetApp não cobra pelo cache de volume, mas você precisará verificar com seu provedor de nuvem as taxas de entrada e saída de dados aplicáveis.
+A NetApp não cobra pelo cache de volume, mas você precisará verificar com seu provedor de nuvem as taxas aplicáveis ​​de entrada e saída de dados.
 
 
 
 == Licenciamento
 
-Nenhuma licença ONTAP especial é necessária para cache de volume.
+Não são necessárias licenças ONTAP especiais para o cache de volume.
 
 
 
@@ -82,4 +82,4 @@ Um volume de cache é um volume pouco preenchido que é apoiado por um volume de
 
 O volume de cache fornece acesso aos dados no volume de origem sem exigir que todos os dados estejam no volume de cache.  O armazenamento de dados no volume de cache é gerenciado de forma eficiente, retendo apenas os dados importantes (dados de trabalho ou usados recentemente).
 
-O cache de volume lê solicitações se o volume de cache contiver os dados solicitados pelo cliente.  Caso contrário, o serviço de cache de volume solicita os dados do volume de origem e os armazena antes de atender à solicitação do cliente.  As solicitações subsequentes de dados são atendidas diretamente do volume de cache.  Isso melhora o desempenho quando os mesmos dados são acessados repetidamente, porque após a primeira solicitação, os dados não precisam mais viajar pela rede ou ser atendidos por um sistema sobrecarregado.
+O cache de volume lê as solicitações se o volume de cache contiver os dados solicitados pelo cliente. Caso contrário, o serviço de cache de volume solicita os dados do volume de origem e os armazena antes de atender à solicitação do cliente. As solicitações subsequentes de dados são então atendidas diretamente do volume de cache. Isso melhora o desempenho quando os mesmos dados são acessados repetidamente, porque, após a primeira solicitação, os dados não precisam mais trafegar pela rede nem ser fornecidos por um sistema sobrecarregado.

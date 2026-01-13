@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: release-notes/cache-whats-new.html 
-keywords: volume caching faq, bluexp, volume caching frequently asked questions 
+keywords: Volume Caching faq, bluexp, Volume Caching frequently asked questions 
 summary: O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
 ---
-= O que há de novo no cache de volume
+= O que há de novo no cache de volume?
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: O cache de volume fornece um volume persistente e gravável em um local
 
 
 [role="lead"]
-Aprenda o que há de novo em cache de volume.
+Descubra as novidades em cache de volume.
 
 
 
@@ -20,9 +20,9 @@ Aprenda o que há de novo em cache de volume.
 
 
 
-=== O BlueXP volume caching agora é cache de volume
+=== O cache de volume do BlueXP agora é apenas cache de volume.
 
-O BlueXP volume caching foi renomeado para cache de volume.
+O recurso "BlueXP Volume Caching" foi renomeado para "Volume Caching".
 
 Você pode acessá-lo na barra de navegação esquerda do NetApp Console selecionando *Mobilidade* > *Cache de volume*.
 
@@ -40,10 +40,10 @@ Para obter detalhes sobre o que mudou, consulte olink:https://docs.netapp.com/us
 
 
 
-=== BlueXP volume caching
+=== Cache de volume BlueXP
 
-O BlueXP volume caching, um recurso do software ONTAP 9, é um recurso de cache remoto que simplifica a distribuição de arquivos, reduz a latência da WAN ao aproximar os recursos de onde seus usuários e recursos de computação estão, e reduz os custos de largura de banda da WAN. O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o BlueXP volume caching para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente.
+O BlueXP Volume Caching, um recurso do software ONTAP 9, é uma capacidade de cache remoto que simplifica a distribuição de arquivos, reduz a latência da WAN ao aproximar os recursos de onde estão seus usuários e recursos de computação e diminui os custos de largura de banda da WAN. O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o cache de volume do BlueXP para acelerar o acesso aos dados ou para descarregar o tráfego de volumes acessados ​​com frequência. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente.
 
-Com o BlueXP volume caching, você tem recursos de cache para a nuvem, especificamente para Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ambientes de trabalho locais.
+Com o BlueXP Volume Caching, você tem recursos de cache para a nuvem, especificamente para Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ambientes locais.
 
 link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["Saiba mais sobre cache de volume"] .
