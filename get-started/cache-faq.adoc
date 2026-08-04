@@ -14,7 +14,7 @@ summary: Estas perguntas frequentes podem ajudar se você estiver apenas procura
 [role="lead"]
 Estas perguntas frequentes podem ajudar se você estiver apenas procurando uma resposta rápida para uma pergunta.
 
-Qual é a URL de cache de volume? Para obter o URL, em um navegador, digite: https://console.netapp.com/["https://console.netapp.com/"^] Para acessar o console BlueXP .
+*Qual é a URL de cache de volume?* Para a URL, em um navegador, digite: https://console.netapp.com/["https://console.netapp.com/"^] para acessar o NetApp Console.
 
 *Você precisa de uma licença para usar o Cache de Volume?* Não é necessário um arquivo de licença NetApp (NLF).
 

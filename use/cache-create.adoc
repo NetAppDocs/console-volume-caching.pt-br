@@ -28,6 +28,7 @@ O nome do volume em cache usa um sufixo de `pass:macros[_cache]` adicionado ao n
 
 
 
+[[steps-from-the-volume-caching-landing-page]]
 == Etapas a partir da página inicial do Volume Caching
 
 . Efetue login no NetApp Console.
@@ -72,6 +73,7 @@ O novo cache aparece na lista de cache.  O nome do volume do cache será exibido
 
 
 
+[[steps-from-the-netapp-console-systems-page]]
 == Etapas da página Sistemas do NetApp Console
 
 . Na página Sistemas do NetApp Console , selecione o ambiente de trabalho.

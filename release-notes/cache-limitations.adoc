@@ -16,6 +16,7 @@ Limitações conhecidas identificam plataformas, dispositivos ou funções que n
 
 
 
+[[limitation-in-copying-cache-export-policy-rules]]
 == Limitação na cópia de regras de política de exportação de cache
 
 As regras da política de exportação de cache não são copiadas para o volume de cache nas seguintes situações:
@@ -28,6 +29,7 @@ Solução alternativa: você deve criar manualmente as regras para o volume de c
 
 
 
+[[cache-creation-fails-for-storage-vms-with-same-name]]
 == A criação do cache falha para VMs de armazenamento com o mesmo nome
 
 Se os clusters de origem e destino usarem VMs de armazenamento com o mesmo nome, o cache não será criado.
@@ -36,6 +38,7 @@ Solução alternativa: use nomes diferentes para as VMs de armazenamento de orig
 
 
 
+[[delay-in-displaying-new-or-recently-edited-export-policies]]
 == Atraso na exibição de políticas de exportação novas ou editadas recentemente
 
 Ao criar um cache, talvez você não consiga ver uma política de exportação criada ou editada recentemente na lista.
@@ -44,6 +47,7 @@ Solução alternativa: tente novamente em alguns minutos.
 
 
 
+[[cache-creation-fails-when-destination-has-only-cifs-protocol-enabled]]
 == A criação do cache falha quando o destino tem apenas o protocolo CIFS habilitado
 
 A criação do cache falhará se o cluster de origem ou de destino tiver o ONTAP 9.10.1 ou anterior, e o cluster de destino tiver apenas o protocolo CIFS habilitado.
