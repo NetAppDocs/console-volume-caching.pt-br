@@ -4,7 +4,7 @@ permalink: use/monitor-jobs.html
 keywords: Volume Caching, NetApp Volume caching 
 summary: O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o cache de volume do NetApp para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
 ---
-= Monitore os trabalhos de cache de volume na página de auditoria.
+= Monitore os trabalhos do NetApp Volume Caching na página Audit
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

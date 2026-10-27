@@ -4,7 +4,7 @@ permalink: release-notes/cache-whats-new.html
 keywords: Volume Caching faq, bluexp, Volume Caching frequently asked questions 
 summary: O cache de volume fornece um volume persistente e gravável em um local remoto. Você pode usar o cache de volume para acelerar o acesso aos dados ou para descarregar o tráfego de volumes muito acessados. Os volumes de cache são ideais para cargas de trabalho com uso intensivo de leitura, especialmente quando os clientes precisam acessar os mesmos dados repetidamente. 
 ---
-= O que há de novo no cache de volume?
+= O que há de novo no NetApp Volume Caching
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
